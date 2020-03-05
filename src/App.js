@@ -30,13 +30,13 @@ export default function App(){
      <Navbar />
 
      <Switch>
-        <Route path="ROUTE.HOME" component={HOME} />
-        <Route path="ROUTE.ADD_STUDENT" component={ADD_STUDENT} />
-        <Route path="ROUTE.UPDATE_STUDENT" component={UPDATE_STUDENT} />
+        <Route path={ROUTE.HOME} exact component={HOME} />
+        <Route path={ROUTE.ADD_STUDENT} exact component={ADD_STUDENT} />
+        <Route path={ROUTE.UPDATE_STUDENT} exact component={UPDATE_STUDENT} />
         
         {/* ADMIN ROUTES */}
-        <Route path="ROUTE.ADD_ADMIN" component={ADD_ADMIN} />
-        <Route path="ROUTE.UPDATE_ADMIN" component={UPDATE_ADMIN} />
+        <Route path="ROUTE.ADD_ADMIN" exact component={ADD_ADMIN} />
+        <Route path="ROUTE.UPDATE_ADMIN" exact component={UPDATE_ADMIN} />
      </Switch>
    </Router>
   )

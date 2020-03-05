@@ -1,0 +1,16 @@
+
+// students list
+table {
+    
+    th {
+        text-transform: capitalize;
+    }
+}
+
+table.students_list {
+    margin: auto;
+    max-width: 700px;
+    min-width: 50vw;
+    background-color: rgb(226, 222, 222);
+    text-transform: capitalize;
+}
